@@ -1,0 +1,132 @@
+.div-Fragmento{
+  background-color: #ffffff;
+}
+.div-AreaSuperior{
+  min-height: 10vh;
+  background-color: #616bfb;
+}
+
+.div-AreaSuperiorAlinhada:before,
+.div-AreaSuperiorAlinhada:after {
+    content: "";
+    display: table;
+} 
+.div-AreaSuperiorAlinhada:after {
+    clear: both;
+}
+.div-AreaSuperiorAlinhada {
+     zoom: 1;
+}
+
+.div-AreaSuperior-Esquerda{
+  text-align: right;
+  position:relative;
+  width: 800px;
+  float: right;
+}
+
+.div-AreaSuperior-Direita{
+  position:relative;
+  width: 600px;
+  float:right;
+}
+
+.div-Menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(2px + 2vmin);
+  color: white;
+  padding: 10px 10px;
+}
+
+.ohBlog-Menu-Ul {
+    padding:0px;
+    margin:0px;
+    list-style:none;
+
+}
+
+.ohBlog-Menu-Ul-Li {
+  display: inline;
+  padding: 2px 10px;
+  display: inline-block;
+}
+
+.ohBlog-Menu-Ul-Li-a {
+  padding: 2px 10px;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom:3px solid #EDEDED;
+}
+
+.ohBlog-Menu-Ul-Li-a:hover {
+  color: #6D6D6D;
+  border-bottom:3px solid #a025d1;
+}
+
+.div-Titulo-Postagens{
+  text-align: center;
+  text-decoration: solid;
+  font-size: calc(10px + 2vmin);
+  color: #43445a;
+}
+
+.div-Ultimas-Postagens{
+  text-align: center;
+}
+
+.div-Ultimas-Postagens-dt{
+  text-align: center;
+  padding: 2px 10px;
+  color: #484fb1;
+}
+
+.div-Ultimas-Postagens-dt-dd{
+  text-align: center;
+  padding: 2px 10px;
+  color: #43445a;
+}
+
+.img-supernatural {
+  width: 100%;
+}
+
+.div-img-round {
+  text-align: right;
+  border-radius: 100%;
+  overflow: hidden;
+  height: 150px;
+  width:150px;
+  background: rgba(180, 17, 17, 0.014);
+}
+
+.div-NomeBlogueiro{
+  text-align: left;
+  font-size: calc(10px + 2vmin);
+  color: #ffffff;
+  padding: 20px 10px;
+  width:500px;
+}
+
+.div-BiografiaBlogueiro{
+  text-align: justify;
+  color: #ffffff;
+  padding: 10px 10px;
+  float: center;
+  width:500px;
+}
+
+.div-MenuInferior {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(2px + 2vmin);
+  color: #616bfb;
+}
+
+
+

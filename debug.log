@@ -1,0 +1,26 @@
+[0715/041218.467:ERROR:file_io.cc(89)] ReadExactly: expected 280, observed 0
+[0715/041218.470:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0715/042304.163:ERROR:file_io.cc(89)] ReadExactly: expected 280, observed 0
+[0715/042304.165:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0715/042507.029:ERROR:file_io.cc(89)] ReadExactly: expected 280, observed 0
+[0715/042507.030:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0715/042700.792:ERROR:file_io.cc(89)] ReadExactly: expected 280, observed 0
+[0715/042700.793:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0715/042814.119:ERROR:file_io.cc(89)] ReadExactly: expected 280, observed 0
+[0715/042814.120:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0715/043023.674:ERROR:file_io.cc(89)] ReadExactly: expected 280, observed 0
+[0715/043023.675:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0715/043248.457:ERROR:file_io.cc(89)] ReadExactly: expected 280, observed 0
+[0715/043248.459:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0715/044532.314:ERROR:file_io.cc(89)] ReadExactly: expected 280, observed 0
+[0715/044532.316:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0715/045248.811:ERROR:file_io.cc(89)] ReadExactly: expected 280, observed 0
+[0715/045248.813:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0715/050501.796:ERROR:file_io.cc(89)] ReadExactly: expected 280, observed 0
+[0715/050501.797:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0715/051149.905:ERROR:file_io.cc(89)] ReadExactly: expected 280, observed 0
+[0715/051149.906:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0715/051557.665:ERROR:file_io.cc(89)] ReadExactly: expected 280, observed 0
+[0715/051557.666:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0715/051751.211:ERROR:file_io.cc(89)] ReadExactly: expected 280, observed 0
+[0715/051751.213:ERROR:crash_report_database_win.cc(445)] failed to read records
