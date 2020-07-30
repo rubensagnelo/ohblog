@@ -5,14 +5,11 @@ import App from './App';
 
 import * as serviceWorker from './serviceWorker';
 
-//import registerServiceWorker from './registerServiceWorker';
-//import { applyPolyfills, defineCustomElements } from 'ohblogmenu/loader';
-//import { applyPolyfills, defineCustomElements } from 'ohblogpost/loader';
-
+//Componentes
 import {  defineCustomElements as blgmenu } from 'ohblogmenu/loader';
 import {  defineCustomElements as blgpost } from 'ohblogpost/loader';
+import {  defineCustomElements as blgtempo } from 'ohblogtempo/loader';
 
-//import {  defineCustomElements } from 'ohblogpost/loader';
 
 
 ReactDOM.render(
@@ -28,13 +25,7 @@ ReactDOM.render(
 
 serviceWorker.unregister();
 
+
 blgmenu(window);
 blgpost(window);
-//registerServiceWorker();
-
-//defineCustomElements(window);
-/*
-applyPolyfills2().then(() => {
-  defineCustomElements(window);
-});
-*/
+blgtempo(window);
