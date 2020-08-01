@@ -21,7 +21,6 @@
 .div-AreaSuperior-Esquerda{
   text-align: right;
   position:relative;
-  /*width: 800px;*/
   width: 30%;
   float: right;
 }
@@ -29,7 +28,6 @@
 .div-AreaSuperior-Direita{
   position:relative;
   width: 70%;
-  /*width: 600px;*/
   float:right;
 }
 
@@ -136,4 +134,15 @@
 }
 
 
-
+.div-Tempo{
+  display: table-cell;
+  width: 200px;
+  margin: 50px auto;
+  font-size: 8pt;
+  text-decoration: solid;
+  color: #ffffff;
+  background-color: #616bfb;
+  height: 140px;
+  vertical-align: middle;
+  margin-bottom: 30px;
+}

@@ -8,8 +8,9 @@ import axios from 'axios'
 
 
 
+
 const MainMenu = () => (
-  <ohblog-menu  titulos='Blog,Sobre,Descrição'></ohblog-menu>
+  <ohblog-menu  titulos='Blog,Sobre,Descrição' imagem='http://www.clker.com/cliparts/1/L/z/D/d/A/blog-icon-md.png' ></ohblog-menu>
 );
 
 //<img src={ximagem} className="img-supernatural" alt="Supernatural" />
@@ -65,25 +66,62 @@ const MainDivAreaSuperiorDireita = () => (
   );
 
 
+const TempoAgora = ()=> (
+        <label>
+        <div class="div-Tempo"  >
+          <ohblog-tempo entcidade="brasilia"></ohblog-tempo>
+        </div>    
 
+        <div class="div-Tempo"  >
+          <ohblog-tempo entcidade="sao paulo"></ohblog-tempo>
+        </div>    
+
+        <div class="div-Tempo" >
+          <ohblog-tempo entcidade="rio de janeiro"></ohblog-tempo>
+        </div>    
+
+        <div class="div-Tempo" >
+          <ohblog-tempo entcidade="belo horizonte"></ohblog-tempo>
+        </div>
+
+        <div class="div-Tempo" >
+          <ohblog-tempo entcidade="curitiba"></ohblog-tempo>
+        </div>    
+        <div class="div-Tempo" >
+          <ohblog-tempo entcidade="santa catarina"></ohblog-tempo>
+        </div>    
+        <div class="div-Tempo" >
+          <ohblog-tempo entcidade="manaus"></ohblog-tempo>
+        </div>    
+        </label>
+);
 
 function App() {
 
   return (
-  <div className="div-Fragmento">
-      <div className="div-AreaSuperior">
-          <ohblog-tempo entcidade="belo horizonte"></ohblog-tempo>
-          <MainMenu />
-          <div className="div-AreaSuperiorAlinhada">
-          <MainDivAreaSuperiorDireita />
-          <MainDivAreaSuperiorEsquerda />
-        </div>
-    </div>
-    <div className="div-Titulo-Postagens">Últimas do blog</div>
-    <MainDivListaUltimasPostagens />
-    <div className="div-MenuInferior"><a href="#">Ver tudo</a></div>
 
-</div>
+  <div className="div-Fragmento">
+  
+
+       <div className="div-AreaSuperior">
+            <MainMenu />
+            <div className="div-AreaSuperiorAlinhada">
+              <MainDivAreaSuperiorDireita />
+              <MainDivAreaSuperiorEsquerda />
+            </div>
+        </div>
+
+        <TempoAgora />
+
+        <div className="div-Titulo-Postagens">Últimas do blog</div>
+        <MainDivListaUltimasPostagens />
+        <div className="div-MenuInferior"><a href="#">Ver tudo</a></div>  
+  </div>
+
+    
+
+  
+
 
 
 )}
