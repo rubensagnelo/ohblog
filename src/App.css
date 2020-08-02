@@ -145,4 +145,14 @@
   height: 140px;
   vertical-align: middle;
   margin-bottom: 30px;
+
+
+}
+
+.div-Tempos{
+ height: auto;
+ background-color:  #616bfb ;
+ color:  #616bfb;
+ padding-left: 10px;
+ padding-right: 10px;
 }

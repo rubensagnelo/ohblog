@@ -82,3 +82,9 @@
 [0802/052125.849:ERROR:crash_report_database_win.cc(445)] failed to read records
 [0802/052612.726:ERROR:file_io.cc(89)] ReadExactly: expected 280, observed 0
 [0802/052612.727:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0802/053619.188:ERROR:file_io.cc(89)] ReadExactly: expected 280, observed 0
+[0802/053619.189:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0802/102750.154:ERROR:file_io.cc(89)] ReadExactly: expected 280, observed 0
+[0802/102750.156:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0802/112604.893:ERROR:file_io.cc(89)] ReadExactly: expected 280, observed 0
+[0802/112604.895:ERROR:crash_report_database_win.cc(445)] failed to read records

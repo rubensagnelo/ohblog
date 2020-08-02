@@ -125,8 +125,9 @@ function App() {
             </Switch>
             </div>
         </div>
-
-        <TempoAgora />
+        <div className="div-Tempos" >
+            <TempoAgora />
+        </div>
 
         <div className="div-Titulo-Postagens">Últimas do blog</div>
         <MainDivListaUltimasPostagens />
