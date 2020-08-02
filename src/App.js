@@ -10,7 +10,7 @@ import axios from 'axios'
 
 
 const MainMenu = () => (
-  <ohblog-menu  titulos='Blog,Sobre,Descrição' imagem='http://www.clker.com/cliparts/1/L/z/D/d/A/blog-icon-md.png' ></ohblog-menu>
+  <ohblog-menu  titulos='Homem de Ferro,Capião América ,Hulk, Thor' imagem='http://www.clker.com/cliparts/1/L/z/D/d/A/blog-icon-md.png' ></ohblog-menu>
 );
 
 //<img src={ximagem} className="img-supernatural" alt="Supernatural" />
