@@ -7,7 +7,8 @@ export default function MarvelPage(props) {
     marvel: {},
     loading: true,
   }
-  const credencial = 'ts=thesoer&apikey=001ac6c73378bbfff488a36141458af2&hash=72e5ed53d1398abb831c3ceec263f18b&limit=10';
+  const credencial = 'ts=thesoer&apikey=001ac6c73378bbfff488a36141458af2&hash=72e5ed53d1398abb831c3ceec263f18b';
+  const limitereg = '&limit=10';
 
   const [marvel, setMarvel] = useState(initialMarvelState)
   const accesskey = 'ts=thesoer&apikey=001ac6c73378bbfff488a36141458af2&hash=72e5ed53d1398abb831c3ceec263f18b'
@@ -15,7 +16,7 @@ export default function MarvelPage(props) {
   useEffect(() => {
     const getMarvel = async () => {
       const { data } = await axios(
-        'https://gateway.marvel.com/v1/public/characters?'+accesskey+'&name='+props.match.params.id
+        'https://gateway.marvel.com/v1/public/characters?'+accesskey+limitereg+'&name='+props.match.params.id
       )
 
       setMarvel(data)
@@ -24,8 +25,25 @@ export default function MarvelPage(props) {
     getMarvel()
   }, []) 
 
-  return marvel.loading ? (
-    <div>Loading...</div>
+  return marvel.loading ? ( <div className="container">
+         <span>
+            <div className="div-AreaSuperior-Direita">
+                <div className="div-NomeBlogueiro">
+                    ...
+                </div>
+                    <div className="div-BiografiaBlogueiro">
+                    Carregando...
+                    </div>
+            </div>
+            <div className="div-AreaSuperior-Esquerda">
+                <div width='100%' align='center'>
+                    <div className="div-img-round" >
+                     Carregando...
+                    </div>
+                </div>
+            </div> 
+        </span>
+    </div>
   ) : (
     <div className="container">
          <span>
