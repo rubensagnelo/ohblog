@@ -49,7 +49,7 @@ export default function MarvelPage(props) {
          <span>
             <div className="div-AreaSuperior-Direita">
                 <div className="div-NomeBlogueiro">
-                        {marvel.data.results[0].name}
+                        {marvel.data.results[0].name + " (ID:"+ marvel.data.results[0].id+") "}
                 </div>
                     <div className="div-BiografiaBlogueiro">
                     {marvel.data.results[0].description}
