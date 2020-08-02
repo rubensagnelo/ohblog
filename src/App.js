@@ -4,13 +4,20 @@ import './App.css';
 import 'ohblogmenu';
 import 'ohblogpost';
 import 'ohblogtempo';
-import axios from 'axios'
+import { Route, Switch } from 'react-router-dom'
+import MarvelPage from './pages/marvelpage';
+//import axios from 'axios'
+
 
 
 
 
 const MainMenu = () => (
-  <ohblog-menu  titulos='Homem de Ferro,Capião América ,Hulk, Thor' imagem='http://www.clker.com/cliparts/1/L/z/D/d/A/blog-icon-md.png' ></ohblog-menu>
+
+  <ohblog-menu  titulos='Homem de Ferro,Capião América,Hulk,Thor' 
+                urls='/info/Iron Man,/info/Captain America,/info/Hulk,/info/Thor' 
+                imagem='http://www.clker.com/cliparts/1/L/z/D/d/A/blog-icon-md.png' >
+   </ohblog-menu>
 );
 
 //<img src={ximagem} className="img-supernatural" alt="Supernatural" />
@@ -52,6 +59,13 @@ const MainDivAreaSuperiorDireita = () => (
       <MainDivNomePerfil />
       <MainDivDescricaoPerfil />
     </div>
+  );
+
+  const MainDivAreaSuperior = () => (
+    <span>
+    <MainDivAreaSuperiorDireita />
+    <MainDivAreaSuperiorEsquerda />
+    </span>
   );
 
   const MainDivListaUltimasPostagens = () => (
@@ -106,8 +120,9 @@ function App() {
        <div className="div-AreaSuperior">
             <MainMenu />
             <div className="div-AreaSuperiorAlinhada">
-              <MainDivAreaSuperiorDireita />
-              <MainDivAreaSuperiorEsquerda />
+            <Switch>
+                <Route path="/info/:id" component={MarvelPage} />
+            </Switch>
             </div>
         </div>
 
