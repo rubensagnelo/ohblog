@@ -45,6 +45,8 @@ export default function MarvelpostsPage(props) {
     getMarvelposts()
   }, []) 
 
+  const compl = "Event: ";
+
   return marvelposts.loading ? ( <div className="container">
          <span>
             Carregando...
@@ -54,21 +56,21 @@ export default function MarvelpostsPage(props) {
     <div className="container">
          <span>
             <ohblog-post 
-                titulo={marvelposts.data.results[marvelposts.data.count-1].title}
+                titulo={compl + marvelposts.data.results[marvelposts.data.count-1].title}
                 texto={marvelposts.data.results[marvelposts.data.count-1].description}
                 data={marvelposts.data.results[marvelposts.data.count-1].modified} 
                 redator=""
             ></ohblog-post>
 
             <ohblog-post 
-                titulo={marvelposts.data.results[marvelposts.data.count-2].title}
+                titulo={compl + marvelposts.data.results[marvelposts.data.count-2].title}
                 texto={marvelposts.data.results[marvelposts.data.count-2].description}
                 data={marvelposts.data.results[marvelposts.data.count-2].modified} 
                 redator=""
             ></ohblog-post>
 
             <ohblog-post 
-                titulo={marvelposts.data.results[marvelposts.data.count-3].title}
+                titulo={compl + marvelposts.data.results[marvelposts.data.count-3].title}
                 texto={marvelposts.data.results[marvelposts.data.count-3].description}
                 data={marvelposts.data.results[marvelposts.data.count-3].modified} 
                 redator=""

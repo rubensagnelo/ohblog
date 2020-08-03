@@ -7,6 +7,7 @@ import 'ohblogtempo';
 import { Route, Switch } from 'react-router-dom'
 import MarvelPage from './pages/marvelpage';
 import MarvelpostsPage from './pages/marvelpostspage';
+import MarveltempoPage from './pages/marveltempo';
 //import { queryAllByAltText } from '@testing-library/react';
 //import { Prop } from 'ohblogmenu/dist/types/stencil-public-runtime';
 //import axios from 'axios'
@@ -71,31 +72,31 @@ const MainDivAreaSuperiorDireita = () => (
     </span>
   );
 
-  const MainDivListaUltimasPostagens = () => (
-    <span>
-    <ohblog-post 
-        titulo="MERCEDÃO" 
-        texto="RIO (só prata) – A Mercedes postou vários tuítes hoje comemorando os 25 anos da marca como safety-car oficial da Fórmula 1. Juro que procurei, mas não achei qual foi o primeiro GP — acho que foi em 1996, e portanto esta é a 25ª temporada; a foto acima, furtada legalmente do site da Mercedes, supostamente é do primeiro SC, um belo C36 AMG prata. Tem uma historinha por trás desse" 
-        data="01-08-2020 10:20h" 
-        redator="Rubens Agnelo"
-    ></ohblog-post>
+  
 
-    <ohblog-post 
-        titulo="N’UNGRIA" 
-        texto="RIO (tristeza, putz) – Não costuma chover em fim de semana de GP da Hungria. Lembro que, por anos, essa corrida ficou esperando por sua primeira edição no molhado. E demorou. Sei lá, quase 20 anos. Não lembro direito. Hoje caiu o mundo no segundo treino livre. Só 13 carros foram à pista. De manhã, no seco, a Mercedes dominou as ações com enorme facilidade. E a Point Aston India Racing..."
-        data="01-08-2020 08:50h" 
-        redator="Rubens Agnelo"
-    ></ohblog-post>
-  </span>
+function cidade(nome){
 
-  );
+  var id = '1009368';
+  if (nome=="Iron Man"){
+    id='new york';
+  } else if (nome=='Captain America'){
+    id='brooklyn';
+  } else if (nome=='Hulk'){
+    id='Dayton';
+  } else if (nome=='Thor'){
+    id='Asgard';
+  }
+  return id;
+}
 
 
 const TempoAgora = ()=> (
         <label>
 
-        <div class="div-Tempo div-Tempo-personagem" >
-          <ohblog-tempo entcidade="new york"></ohblog-tempo>
+        <div class="div-Tempo div-Tempo-personagem"  >
+          <Switch>
+                  <Route path="/info/:id" component={MarveltempoPage} />
+          </Switch>
         </div>
 
         <div class="div-Tempo"  >
@@ -144,6 +145,7 @@ function App() {
             <Switch>
                 <Route path="/info/:id" component={MarvelpostsPage} />
             </Switch>
+
         <div className="div-MenuInferior"><a href="#" class="botao--verde">Ver todos</a></div>
   </div>
 
