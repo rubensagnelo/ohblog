@@ -9,6 +9,7 @@ export default function MarveltempoPage(props) {
 
   function cidade(nome){
 
+    //Não existe API para informação da cidade do personagem
     var localnasc = '';
     if (nome=="Iron Man"){
         localnasc='new york';
@@ -17,7 +18,8 @@ export default function MarveltempoPage(props) {
     } else if (nome=='Hulk'){
         localnasc='Dayton';
     } else if (nome=='Thor'){
-        localnasc='new york';
+        localnasc='new york'; //Não existe Asgard para o serviço de clima-tempo. 
+                              //Foi considerado a cidade da namorada do Thor (Jane Foster)
     }
     return localnasc;
   }
