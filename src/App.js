@@ -144,6 +144,7 @@ function App() {
             <Switch>
                 <Route path="/info/:id" component={MarvelpostsPage} />
             </Switch>
+        <div className="div-MenuInferior"><a href="#" class="botao--verde">Ver todos</a></div>
   </div>
 
     
