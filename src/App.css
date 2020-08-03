@@ -155,8 +155,14 @@
  height: auto;
  background-color:  #616bfb ;
  color:  #616bfb;
- padding-left: 10px;
- padding-right: 10px;
+ padding-left: 30px;
+ padding-right: 25px;
+
+
+ display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
 }
 
 
